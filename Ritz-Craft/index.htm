@@ -1,0 +1,358 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ritz-Craft - Custom Building Simplified</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+ 
+<body>
+    <!-- Header -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.png" alt="Ritz-Craft Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Explore Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"> Design Inspirations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Custom Finishes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Why Choose Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Partner</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="ms-auto d-flex">
+                <a href="#" class="btn btn-primary me-2"><i class="fas fa-thumbs-up me-1"></i>My Favorites</a>
+                <a href="#" class="btn btn-primary me-2"><i class="fas fa-user me-1"></i>Builder Login</a>
+                <a href="#" class="btn btn-secondary"><i class="fas fa-envelope me-1"></i>Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <!-- Hero Background with Images -->
+        <div class="hero-background">
+            <img src="./assets/banner1.png" alt="Background Image 1" class="hero-bg-img">
+            <img src="./assets/banner2.png" alt="Background Image 2" class="hero-bg-img">
+            <img src="./assets/banner3.png" alt="Background Image 3" class="hero-bg-img">
+            <img src="./assets/banner4.png" alt="Background Image 4" class="hero-bg-img">
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <h1 class="hero-title">Open the door to your family's forever.</h1>
+            <div class="d-flex justify-content-center flex-wrap">
+                <a href="#" class="btn btn-red btn-hero" style="color:aliceblue">I'm a Home Buyer</a>
+                <a href="#" class="btn btn-blue btn-hero" style="color:aliceblue">I'm a Builder</a>
+            </div>
+            <div class="choose-plan-text">Choose Your Plan</div>
+            <div class="search-bar">
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle search-input" type="button" data-bs-toggle="dropdown">
+                        Style
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Modern</a></li>
+                        <li><a class="dropdown-item" href="#">Traditional</a></li>
+                        <li><a class="dropdown-item" href="#">Farmhouse</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle search-input" type="button" data-bs-toggle="dropdown">
+                        Collection
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Homestead</a></li>
+                        <li><a class="dropdown-item" href="#">Benchmark</a></li>
+                        <li><a class="dropdown-item" href="#">Signature</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle search-input" type="button" data-bs-toggle="dropdown">
+                        Beds
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4+</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle search-input" type="button" data-bs-toggle="dropdown">
+                        Baths
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4+</a></li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-outline-secondary dropdown-toggle search-input" type="button" data-bs-toggle="dropdown">
+                        Sq. Ft.
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1000-2000</a></li>
+                        <li><a class="dropdown-item" href="#">2000-3000</a></li>
+                        <li><a class="dropdown-item" href="#">3000-4000</a></li>
+                        <li><a class="dropdown-item" href="#">4000+</a></li>
+                    </ul>
+                </div>
+                <input type="text" class="form-control search-input" placeholder="Name of Plan">
+                <button class="btn search-btn">Search</button>
+            </div>
+        </div>
+        <!-- Carousel Indicators (Optional, can be used for manual control if needed) -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active indicator-btn"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" class="indicator-btn"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" class="indicator-btn"></button>
+            <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" class="indicator-btn"></button>
+        </div>
+    </section>
+
+    <!-- Custom Building Simplified Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Custom Building Simplified™</h2>
+                    <p class="section-subtitle">Custom and simple. It's the connection that defines the Ritz-Craft Advantage. As part of your team, we join the simplicity of pre-designed floor plans with the custom details you've dreamed of for years.</p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="row">
+                        <div class="col-6">
+                            <img src="./assets/map.jpg" alt="Design Process" class="img-fluid rounded-circle">
+                        </div>
+                        <div class="col-6">
+                            <img src="./assets/custom.jpg" alt="Blueprint" class="img-fluid rounded-circle">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="section" style="background-color: var(--primary-color); color: var(--light-color);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="./assets/Jhon.webp" alt="Owners Paul & Eric John" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title" style="color: var(--Dark-color);">About Us</h2>
+                    <h3 class="mb-3" style="font-size: 1.8rem; font-weight: 700;">With Us, It's Personal</h3>
+                    <p>We're the largest family-owned, off-site, modular home manufacturer in the United States. Although our company is large in size, our focus is on the finest details of your home. To continue delivering on our promises, we operate under three guiding principles:</p>
+                    <ul class="feature-list">
+                        <li>Providing a safe and productive work environment for our employees</li>
+                        <li>Developing strong, decade-long relationships with our independent builder network</li>
+                        <li>Providing products and services to home buyers that are unparalleled in design, workmanship, and quality</li>
+                    </ul>
+                    <a href="#" class="btn btn-light mt-3">Why Choose Us →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highest Quality Homes Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h2 class="section-title">The Highest-Quality Homes Built Today</h2>
+                    <p class="section-subtitle">Ritz-Craft's custom designed homes utilize today's latest and most proven construction methods to meet or exceed state home building codes — and your dream home expectations. Your new home is completed on-site by one of our approved, independent home builders.</p>
+                    <p>A library of specially chosen floor plans with unique features and popular layouts.</p>
+                    <div class="d-flex flex-wrap gap-2">
+                        <a href="#" class="btn btn-primary">View More About Our Quality</a>
+                        <a href="#" class="btn btn-secondary">Plan of the Month</a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <img src="./assets/Home.rev.jpg" alt="Quality Home" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+    <!-- Faster Than Site Built Section -->
+    <section class="section" style="background-color: var(--primary-color); color: var(--light-color);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <img src="./assets/faster-than-site-built.jpg" alt="Factory Floor" class="img-fluid rounded">
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title" style="color: var(--light-color);">Faster Than Site Built</h2>
+                    <p>Our systems-built homes are built in an environmentally controlled atmosphere while your independent builder simultaneously preps the site and foundation. This empowers your builder to build more efficiently while saving you both time and money.</p>
+                    <div class="d-flex flex-wrap gap-2 mt-3">
+                        <a href="#" class="btn btn-light">View Our Floor Plans →</a>
+                        <a href="#" class="btn btn-outline-light">Download Floor Plans ↓</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="section-title">Pricing</h2>
+                    <h3 class="mb-3" style="font-size: 1.8rem; font-weight: 700;">Modest to Magnificent</h3>
+                    <p>Custom and simple. It's the connection that defines the Ritz-Craft Advantage. As part of your team, we join the simplicity of pre-designed floor plans with the custom details you've dreamed of for years.</p>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-header">Homestead</div>
+                        <div class="card-body">
+                            <p>Semi-Custom, Value Crafted Plans</p>
+                            <ul class="feature-list">
+                                <li>Square Feet: <strong>1,000 - 2,400</strong></li>
+                                <li>Ranch</li>
+                                <li>Cape Cod (Story and a half)</li>
+                                <li>Two-Story</li>
+                                <li>Pre-Designed for Maximum Value</li>
+                                <li>Floor Plan Modifications</li>
+                                <li>Kitchen & Bath Options</li>
+                                <li>Optional Features</li>
+                            </ul>
+                            <a href="#" class="btn btn-secondary w-100 mt-3">Get Started →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="card">
+                        <div class="card-header" style="background-color: var(--secondary-color);">Benchmark</div>
+                        <div class="card-body">
+                            <p>Custom Plans Awaiting Your Ideas</p>
+                            <ul class="feature-list">
+                                <li>Square Feet: <strong>1,500 - 4,000+</strong></li>
+                                <li>Ranch</li>
+                                <li>Cape Cod (Story and a half)</li>
+                                <li>Two-Story</li>
+                                <li>Pre-Designed for Maximum Value</li>
+                                <li>Floor Plan Modifications</li>
+                                <li>Kitchen & Bath Options</li>
+                                <li>Optional Features</li>
+                            </ul>
+                            <a href="#" class="btn btn-primary w-100 mt-3">Get Started →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career CTA Section -->
+    <section class="section" style="background-color: var(--primary-color); color: var(--light-color);">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/RzqC2CtsKE0?si=qF6taavjogJK-01Z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+                <div class="col-lg-6">
+                    <h2 class="section-title" style="color: var(--light-color);">Open the Door to A New Career</h2>
+                    <p>At Ritz-Craft, you're empowered to reach your greatest potential and produce high-quality work in a safe, family-oriented environment</p>
+                    <a href="#" class="btn btn-light mt-3">Explore Job Opportunities →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Email Signup Section -->
+    <section class="section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Sign-up to receive a free Planning Guide PDF</h2>
+                    <p>Photos, ideas, inspirations, floor plans, and valuable tips for planning your dream home.</p>
+                    <form class="d-flex">
+                        <input type="email" class="form-control" placeholder="Enter Your Email" style="border-color: var(--secondary-color);">
+                        <button type="submit" class="btn btn-primary ms-2">Get My Book</button>
+                    </form>
+                </div>
+                <div class="col-lg-4">
+                    <img src="./assets/guide.png" alt="Planning Guide" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="footer-logo">
+                        <img src="./images/logo.png" alt="Ritz-Craft Logo">
+                    </div>
+                    <p>Artist renderings depict homes as they may be built on a typical site. Renderings may include optional and site-installed features. Be sure to thoroughly discuss all aspects of your building project with your Ritz-Craft homebuilder.</p>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Quick Links</h5>
+                    <div class="footer-links">
+                        <a href="#">Floor Plans</a>
+                        <a href="#">Plan Collections</a>
+                        <a href="#">Inspirations</a>
+                        <a href="#">Finishing Touches</a>
+                        <a href="#">Why Ritz-Craft</a>
+                        <a href="#">Find Your Builder</a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Login Links</h5>
+                    <div class="footer-links">
+                        <a href="#">Buyer Login</a>
+                        <a href="#">Builder Login</a>
+                    </div>
+                    <h5 class="mt-4">Social Links</h5>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://in.pinterest.com" target="_blank"><i class="fab fa-pinterest-p"></i></a>
+                        <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                        <a href="https://youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                        <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <h5>Contact Us</h5>
+                    <p>Ritz-Craft Corporation,<br>Northeast Division: Mifflinburg, Pennsylvania<br><strong>800-326-9836</strong></p>
+                    <p>Midwest Division: Jonesville, Michigan<br><strong>877-878-4025</strong></p>
+                </div>
+            </div>
+            <div class="copyright">
+                © 2025 Ritz-Craft Corporation. All Rights Reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
+
+                    
